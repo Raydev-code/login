@@ -1,0 +1,136 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set up a full-screen container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Container for the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* The login box style */
+.login-box {
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Input fields styling */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #3f8efc;
+}
+
+/* Labels */
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    color: #999;
+}
+
+/* Floating label effect */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #3f8efc;
+}
+
+/* Button styling */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3f8efc;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #296ad8;
+}
+
+/* Sign-up link */
+.sign-up-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sign-up-text a {
+    color: #3f8efc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sign-up-text a:hover {
+    color: #296ad8;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+    
+    .login-box h2 {
+        font-size: 22px;
+    }
+    
+    .login-button {
+        font-size: 16px;
+    }
+}
